@@ -2,10 +2,18 @@ name: 'Your name here'
 description: 'Provide a description here'
 author: 'Your name or organization here'
 inputs:
-  milliseconds: # change this
-    required: true
-    description: 'input description here'
-    default: 'default value if applicable'
+  create:
+    required: false
+    description: 'is file created'
+  update:
+    required: false
+    description: 'is file updated'
+  delete:
+    required: false
+    description: 'is file deleted'
+  content:
+    required: false
+    description: 'file contents'
 runs:
   using: 'node16'
   main: 'dist/index.js'
